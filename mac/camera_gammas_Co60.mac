@@ -1,0 +1,16 @@
+## format is: /gps/ion Z A Q E  (Q = charge, E = excitation energy)
+
+#Co60
+
+/gps/particle ion
+/gps/ion 27 60 0 0
+/gps/number 1
+/gps/ene/mono 0 
+
+/gps/pos/centre 1217 0 0 mm
+/gps/ang/type iso
+
+/process/em/fluo true 
+/process/em/auger true
+
+/run/beamOn 100000

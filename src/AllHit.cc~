@@ -1,0 +1,22 @@
+#include "AllHit.hh"
+#include "G4UnitsTable.hh"
+#include "G4VVisManager.hh"
+#include "G4Circle.hh"
+#include "G4Colour.hh"
+#include "G4VisAttributes.hh"
+#include <iomanip>
+
+G4Allocator<AllHit> AllHitsAllocator;
+
+AllHit::AllHit()
+{
+  // pos = G4ThreeVector(0., 0., 0.);
+  // time=0.;
+  // rec = false;
+  // InelasticRec = false;
+}
+
+void AllHit::Print(){}
+
+
+

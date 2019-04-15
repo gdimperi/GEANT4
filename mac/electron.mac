@@ -1,0 +1,13 @@
+/run/initialize
+
+/gps/particle e-
+
+/gps/pos/centre 0 0 0 mm
+/gps/ene/mono 10 keV
+/gps/ang/type iso
+
+/process/eLoss/fluct true
+/process/em/fluo true 
+/process/em/auger true
+
+/run/beamOn 1000

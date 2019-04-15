@@ -1,0 +1,120 @@
+/process/activate neutronElastic
+/process/activate neutronInelastic
+/process/activate neutronCapture
+
+/run/initialize
+
+/gps/particle neutron
+
+/gps/ang/type iso
+
+#/gps/type Volume
+#/gps/shape Para
+/gps/confine CopperSheet_phys
+
+/gps/ene/type User		
+/gps/hist/type energy	
+
+/gps/hist/point 0.1	0.0129203626738648 
+/gps/hist/point 0.2	0.0235724782497002  
+/gps/hist/point 0.3	0.0294744978848193  
+/gps/hist/point 0.4	0.0324420364088107  
+/gps/hist/point 0.5	0.0344102239131546  
+/gps/hist/point 0.6	0.0356130051658092  
+/gps/hist/point 0.7	0.0357299775497883  
+/gps/hist/point 0.8	0.0346823118498016  
+/gps/hist/point 0.9	0.0333829012364686  
+/gps/hist/point 1	0.0319995756520202  
+/gps/hist/point 1.1	0.0304840204161171  
+/gps/hist/point 1.2	0.0289226933777875  
+/gps/hist/point 1.3	0.0271274215714996  
+/gps/hist/point 1.4	0.0253423212768621  
+/gps/hist/point 1.5	0.0234834775227596  
+/gps/hist/point 1.6	0.0215508903091919  
+/gps/hist/point 1.7	0.0196849264969341  
+/gps/hist/point 1.8	0.0179196606500148  
+/gps/hist/point 1.9	0.0161404089745763  
+/gps/hist/point 2	0.0145457702355917  
+/gps/hist/point 2.1	0.0134691157274015  
+/gps/hist/point 2.2	0.0125206222660058  
+/gps/hist/point 2.3	0.0115995918860661  
+/gps/hist/point 2.4	0.0106737300380924  
+/gps/hist/point 2.5	0.00971328505050752 
+/gps/hist/point 2.6	0.00881208911828598 
+/gps/hist/point 2.7	0.00800548824441274 
+/gps/hist/point 2.8	0.00720753315544231 
+/gps/hist/point 2.9	0.00645712988343729 
+/gps/hist/point 3	0.00604976084184053 
+/gps/hist/point 3.1	0.0063518547378561  
+/gps/hist/point 3.2	0.00730797683298957 
+/gps/hist/point 3.3	0.00772195735715906 
+/gps/hist/point 3.4	0.00812652923305198 
+/gps/hist/point 3.5	0.00831444791079231 
+/gps/hist/point 3.6	0.00869079384185548 
+/gps/hist/point 3.7	0.0097226936987841  
+/gps/hist/point 3.8	0.0101422685543613  
+/gps/hist/point 3.9	0.0100179218244357  
+/gps/hist/point 4	0.00987272349562685 
+/gps/hist/point 4.1	0.00963903301545993 
+/gps/hist/point 4.2	0.0094411971138605  
+/gps/hist/point 4.3	0.00934329631422582 
+/gps/hist/point 4.4	0.00906357974384103 
+/gps/hist/point 4.5	0.00859645307129843 
+/gps/hist/point 4.6	0.00848176927744066 
+/gps/hist/point 4.7	0.00873631135649082 
+/gps/hist/point 4.8	0.00912918599398583 
+/gps/hist/point 4.9	0.0093013388286681  
+/gps/hist/point 5	0.00930998461357091 
+/gps/hist/point 5.1	0.00934227916306079 
+/gps/hist/point 5.2	0.0093811851951234  
+/gps/hist/point 5.3	0.0092011494389121  
+/gps/hist/point 5.4	0.00894304733078431 
+/gps/hist/point 5.5	0.00830453068693321 
+/gps/hist/point 5.6	0.00761846222611669 
+/gps/hist/point 5.7	0.00745292087400715 
+/gps/hist/point 5.8	0.00749106404269598 
+/gps/hist/point 5.9	0.00740791193495432 
+/gps/hist/point 6	0.00733569420223679 
+/gps/hist/point 6.1	0.00732908271966406 
+/gps/hist/point 6.2	0.00731763976905741 
+/gps/hist/point 6.3	0.00729134641144124 
+/gps/hist/point 6.4	0.00726019615701203 
+/gps/hist/point 6.5	0.0070730657714246  
+/gps/hist/point 6.6	0.00686688923027188 
+/gps/hist/point 6.7	0.00669092207872072 
+/gps/hist/point 6.8	0.00648004121342972 
+/gps/hist/point 6.9	0.00629072395283746 
+/gps/hist/point 7	0.00608775143785461 
+/gps/hist/point 7.1	0.00558766906756485 
+/gps/hist/point 7.2	0.00505770788180218 
+/gps/hist/point 7.3	0.00449323984276567 
+/gps/hist/point 7.4	0.00398496940559737 
+/gps/hist/point 7.5	0.00354533124328986 
+/gps/hist/point 7.6	0.00315492319737007 
+/gps/hist/point 7.7	0.00278778248435046 
+/gps/hist/point 7.8	0.00247414392261174 
+/gps/hist/point 7.9	0.00219921559133635 
+/gps/hist/point 8	0.00194109568306318 
+/gps/hist/point 8.1	0.00173764764991067 
+/gps/hist/point 8.2	0.00155197179048924 
+/gps/hist/point 8.3	0.0013802512450521  
+/gps/hist/point 8.4	0.00123006378977877 
+/gps/hist/point 8.5	0.00108514263466241 
+/gps/hist/point 8.6	0.00093505435162767 
+/gps/hist/point 8.7	0.000790878259739698
+/gps/hist/point 8.8	0.000674333079249918
+/gps/hist/point 8.9	0.000583669310154469
+/gps/hist/point 9	0.000498083668250461
+/gps/hist/point 9.1	0.000415892768359759
+/gps/hist/point 9.2	0.000336987266732122
+/gps/hist/point 9.3	0.000265190380309127
+/gps/hist/point 9.4	0.000213437932462348
+/gps/hist/point 9.5	0.000166051097415903
+/gps/hist/point 9.6	0.000128635395240301
+/gps/hist/point 9.7	0.000112569418845104
+/gps/hist/point 9.8	9.81364176163018e-05
+/gps/hist/point 9.9	8.43291626984738e-05
+/gps/hist/point 10	7.10677822963854e-05
+
+
+/run/beamOn 1000000

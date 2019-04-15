@@ -1,0 +1,58 @@
+#U238
+
+/gps/particle ion
+/gps/ion 92 238 0 0
+/gps/number 1
+/gps/ene/mono 0 
+
+/gps/confine GEM_Kapton_phys
+/gps/ang/type iso
+
+/grdm/nucleusLimits 230 238 90 92 #Stops the decay at Ra226
+
+/process/em/fluo true 
+/process/em/auger true
+
+#ASCIITree (ATree)
+# DAWNFILE (DAWNFILE) --can not get camera position right!!
+# G4HepRep (HepRepXML)
+#  G4HepRepFile (HepRepFile)
+#  OpenGLImmediateQt (OGLI, OGLIQt)
+#  OpenGLStoredQt (OGL, OGLS, OGLSQt)
+#  RayTracer (RayTracer)
+#  VRML1FILE (VRML1FILE)
+#  VRML2FILE (VRML2FILE)
+#  gMocrenFile (gMocrenFile)
+
+
+#/vis/open OGLIQt
+/vis/open VRML2FILE
+#/vis/open DAWNFILE
+#/vis/viewer/flush
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+
+/vis/scene/add/trajectories 1
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set photon green
+#####/vis/modeling/trajectories/drawByParticleID-0/set GenericIon cyan
+/vis/modeling/trajectories/drawByParticleID-0/set anti_nu_e yellow
+######/vis/modeling/trajectories/drawByParticleID-0/set e+ blue
+/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+#####/vis/modeling/trajectories/drawByParticleID-0/set  blue
+/vis/modeling/trajectories/select drawByParticleID-0
+
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add gamma
+/vis/filtering/trajectories/particleFilter-0/add e-
+#/vis/filtering/trajectories/create/attributeFilter
+#/vis/filtering/trajectories/attributeFilter-0/setAttribute IMag
+#/vis/filtering/trajectories/attributeFilter-0/addInterval 0.001 MeV 0.100 MeV
+/vis/filtering/trajectories/particleFilter-0/add anti_nu_e
+/vis/filtering/trajectories/particleFilter-0/invert true
+
+#####/vis/scene/add/hits
+/vis/scene/endOfEventAction accumulate
+
+/run/beamOn 1
+

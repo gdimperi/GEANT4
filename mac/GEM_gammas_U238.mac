@@ -1,0 +1,18 @@
+## format is: /gps/ion Z A Q E  (Q = charge, E = excitation energy)
+
+#U238
+
+/gps/particle ion
+/gps/ion 92 238 0 0
+/gps/number 1
+/gps/ene/mono 0 
+
+/gps/confine GEM_Kapton_phys
+/gps/ang/type iso
+
+/grdm/nucleusLimits 230 238 90 92 #Stops the decay at Ra226
+
+/process/em/fluo true 
+/process/em/auger true
+
+/run/beamOn 10000

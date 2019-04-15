@@ -1,0 +1,67 @@
+## format is: /gps/ion Z A Q E  (Q = charge, E = excitation energy)
+
+#Th232
+/gps/source/intensity 2.1775
+/gps/particle ion
+/gps/ion 90 232 0 0 
+/gps/ene/mono 0 #Particle at rest (zero energy)
+/gps/pos/centre 1214.5 0 0 mm
+/gps/ang/type iso
+
+#Ra226
+/gps/source/add 2.21
+/gps/particle ion
+/gps/ion 88 226 0 0
+/gps/ene/mono 0
+/gps/pos/centre 1214.5 0 0 mm 
+/gps/ang/type iso
+
+#U238
+/gps/source/add 7.9
+/gps/particle ion
+/gps/ion 92 238 0 0
+/gps/ene/mono 0 
+/gps/pos/centre 1214.5 0 0 mm
+/gps/ang/type iso
+
+#U235
+/gps/source/add 0.431
+/gps/particle ion
+/gps/ion 92 235 0 0
+/gps/ene/mono 0
+/gps/pos/centre 1214.5 0 0 mm 
+/gps/ang/type iso
+
+#K40
+/gps/source/add 12.9
+/gps/particle ion
+/gps/ion 19 40 0 0 
+/gps/ene/mono 0
+/gps/pos/centre 1214.5 0 0 mm 
+/gps/ang/type iso
+
+#CS137
+/gps/source/add 0.0957
+/gps/particle ion
+/gps/ion 55 137 0 0 
+/gps/ene/mono 0
+/gps/pos/centre 1214.5 0 0 mm 
+/gps/ang/type iso
+
+#CO60
+/gps/source/add 0.0219
+/gps/particle ion
+/gps/ion 27 60 0 0
+/gps/ene/mono 0
+/gps/pos/centre 1214.5 0 0 mm 
+/gps/ang/type iso
+
+#La138
+/gps/source/add 0.52
+/gps/particle ion
+/gps/ion 57 138 0 0
+/gps/ene/mono 0
+/gps/pos/centre 1214.5 0 0 mm 
+/gps/ang/type iso
+
+/run/beamOn 100000
